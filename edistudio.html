@@ -24,6 +24,7 @@
   html { scroll-behavior: smooth; }
   body { font-family: var(--font); background: var(--cream); color: var(--text); font-size: 15px; line-height: 1.6; }
 
+  /* ───────── NAV ───────── */
   nav {
     position: sticky; top: 0; z-index: 100;
     background: var(--cream);
@@ -44,6 +45,7 @@
   .btn-navy { background: var(--navy); color: #fff; border: none; }
   .btn-navy:hover { background: #111929; }
 
+  /* ───────── HERO ───────── */
   .hero {
     display: flex; align-items: center; justify-content: space-between;
     padding: 90px 60px 80px;
@@ -62,6 +64,7 @@
   .hero-right {
     position: relative; width: 420px; height: 400px; flex-shrink: 0;
   }
+  /* 3D floating shapes using CSS */
   .shape { position: absolute; border-radius: 12px; }
   .cube1 {
     width: 130px; height: 130px;
@@ -95,11 +98,13 @@
   .orb2 { width: 55px; height: 55px; top: 180px; left: 310px; box-shadow: 0 5px 18px rgba(232,98,42,.3); }
   .orb3 { width: 35px; height: 35px; top: 30px; left: 20px; opacity: .7; }
 
+  /* ───────── SECTION COMMON ───────── */
   section { padding: 90px 60px; }
   .section-tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); margin-bottom: 12px; text-align: center; }
   .section-title { font-size: 38px; font-weight: 800; color: var(--navy); text-align: center; letter-spacing: -1px; margin-bottom: 10px; }
   .section-sub { text-align: center; color: var(--muted); font-size: 14.5px; max-width: 500px; margin: 0 auto 56px; }
 
+  /* ───────── SERVICES ───────── */
   .services { background: var(--cream); }
   .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .service-card {
@@ -116,6 +121,7 @@
   .service-card h3 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
   .service-card p { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
 
+  /* ───────── ABOUT ───────── */
   .about { background: var(--cream); display: flex; align-items: center; gap: 70px; }
   .about-left { flex: 1; }
   .about-left .section-tag, .about-left .section-title { text-align: left; }
@@ -141,6 +147,7 @@
   }
   .about-badge small { font-size: 10px; font-weight: 500; opacity: .85; }
 
+  /* ───────── TESTIMONIALS ───────── */
   .testimonials { background: var(--cream); }
   .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .testi-card {
@@ -152,6 +159,7 @@
   .testi-author { font-weight: 700; font-size: 13.5px; color: var(--navy); }
   .testi-role { font-size: 12px; color: var(--muted); }
 
+  /* ───────── PRICING ───────── */
   .pricing { background: var(--cream); }
   .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
   .price-card {
@@ -174,6 +182,7 @@
   .price-card .btn { width: 100%; text-align: center; padding: 13px; font-size: 14px; }
   .price-card.featured .btn-navy { background: var(--orange); }
 
+  /* ───────── CTA ───────── */
   .cta-section {
     background: var(--navy); text-align: center; padding: 100px 60px;
   }
@@ -181,6 +190,7 @@
   .cta-section p { color: rgba(255,255,255,.55); font-size: 15px; margin-bottom: 36px; }
   .cta-section .btn-orange { padding: 16px 36px; font-size: 16px; }
 
+  /* ───────── CONTACT ───────── */
   .contact { background: var(--cream); }
   .contact .section-title { font-size: 34px; }
   .contact-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
@@ -196,6 +206,7 @@
   .contact-form textarea { height: 120px; resize: none; }
   .contact-form .btn-orange { padding: 14px 40px; font-size: 15px; border-radius: 50px; border: none; cursor: pointer; align-self: center; }
 
+  /* ───────── FOOTER ───────── */
   footer {
     background: #111929; color: rgba(255,255,255,.55);
     padding: 60px 60px 30px;
@@ -224,6 +235,7 @@
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-logo">Edi<span>studio</span></div>
   <ul class="nav-links">
@@ -236,6 +248,7 @@
   <a href="#" class="btn btn-orange">Get Started</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag">WordPress Experts for Startups</div>
@@ -256,6 +269,7 @@
   </div>
 </section>
 
+<!-- SERVICES -->
 <section class="services">
   <div class="section-tag">What We Do</div>
   <h2 class="section-title">Services Built for Startups</h2>
@@ -294,6 +308,7 @@
   </div>
 </section>
 
+<!-- ABOUT -->
 <section class="about">
   <div class="about-left">
     <div class="section-tag">About Edistudio</div>
@@ -318,6 +333,7 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
 <section class="testimonials">
   <div class="section-tag">Testimonials</div>
   <h2 class="section-title">Loved by Founders</h2>
@@ -344,6 +360,7 @@
   </div>
 </section>
 
+<!-- PRICING -->
 <section class="pricing">
   <div class="section-tag">Pricing</div>
   <h2 class="section-title">Simple, Transparent Pricing</h2>
@@ -393,12 +410,14 @@
   </div>
 </section>
 
+<!-- CTA -->
 <section class="cta-section">
   <h2>Ready to Launch Your Startup<br>Online?</h2>
   <p>Join 50+ startups who trust Edistudio to build their digital foundation. Let's get started today.</p>
   <a href="#" class="btn btn-orange">Start Your Project →</a>
 </section>
 
+<!-- CONTACT -->
 <section class="contact">
   <div class="section-tag">Contact Us</div>
   <h2 class="section-title">Let's Build Something Great</h2>
@@ -413,6 +432,7 @@
   </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
